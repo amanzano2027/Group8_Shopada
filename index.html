@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shopada</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            }
+            .header {
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: lightgray;
+            }
+            .nav-tabs .nav-item {
+                margin-bottom: 1px;
+            }
+            .nav-tabs .nav-link {
+                border: none;
+            }
+            .nav-tabs {
+                border-bottom: none;
+            }
+            .container {
+                padding-top: 60px;
+            }
+            .btn {
+                border-radius: 50px;
+            }
+            .card {
+                border-radius: 20px;
+            }
+            .fade {
+                padding: 50px;
+            }
+            .for-rowing {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+            }
+            .for-padding {
+                padding-top: 50px;
+            }
+            .main-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start; 
+            }
+
+            .cart {
+                flex: 1;
+                margin-right: 20px; 
+                padding: 20px;
+            }
+
+            .form-container {
+                flex: 1;
+            }
+
+            .form-label {
+                width: 100px;
+                display: inline-block;
+                text-align: right;
+                margin-right: 10px;
+            }
+
+            .form-field {
+                width: calc(80% - 60px);
+                display: inline-block;
+            }
+
+            .form-field.full {
+                width: calc(100% - 130px); 
+            }
+
+            .round-div {
+                background-color: white;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 20px;
+                width: 200px;
+                text-align: center; 
+            }
+
+            .round-div hr {
+                width: 80%; 
+                margin: 5px auto; 
+            }
+
+            .top-text {
+                font-style: italic; 
+            }
+
+            .bold {
+                font-weight: bold; 
+                font-size: 16px; 
+            }
+            .for-row {
+                display: flex;
+                flex-direction: row;
+            }
+            .nav-link{
+                color: white;
+            }
+            .nav-link:hover{
+                color: gray;
+            }
+            .nav-link:active{
+                background-color: blue;
+                color: beige;
+            }
+
+        </style>
+    </head>
+    <body style="background-color:#0d1425;">
+        <div class="header">
+            <h1 class="text-center">Lazapee</h1>
+            <p class="text-center">Unleash the Best in Show: Shop Our Top-Quality Dog Gear Today! From stylish collars to cozy beds, find everything your furry friend needs to strut their stuff. Shop now for wag-worthy deals!</p>
+            <a href="about.html" class="text-center">
+                <button class=" btn btn-primary rounded-pill text-center">Learn More!</button>
+            </a>
+        </div>
+        <div class="container">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a href="#Appliances" class="nav-link active" data-bs-toggle="tab">Appliances</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Clothes" class="nav-link" data-bs-toggle="tab">Clothes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Seating-Options" class="nav-link" data-bs-toggle="tab">Seating Options</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Tools" class="nav-link" data-bs-toggle="tab">Tools</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="Appliances">
+                <div class="text-center for-rowing">
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="One.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Breeze Writer</h5>
+                            <p class="price">Php 1500.00</p>
+                            <p class="card-text">This quirky combo of an electric fan and ballpoint pen is here to keep your cool ideas breezy and your hot takes chill.</p>
+                            <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="Two.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blow-Away Fan-tasy</h5>
+                            <p class="price">Php 1000.00</p>
+                            <p class="card-text">Need to cool down and style your hair simultaneously? No problem! With the Blow-Away Fan-tasy  , you can blow-dry your locks while enjoying a not so refreshing breeze.</p>
+                            <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="Three.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fridge-O-Matic Washinator</h5>
+                            <p class="price">Php 2500.00</p>
+                            <p class="card-text">Why settle for just clean clothes or cold food when you can have both? This zany gadget combines the cooling power of a fridge with the sudsy action of a washing machine. Store your ice cream and wash your jeans simultaneously! </p>
+                            <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="Four.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chill-N-Grill</h5>
+                            <p class="price">Php 4000.00</p>
+                            <p class="card-text">Cook your favorite meals while staying refreshingly cool—no more sweating over a hot stove! Perfect for those who crave comfort food and comfort cooling at the same time.</p>
+                            <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-padding">
+                    <div class="card rounded last-card" style="width: 18rem;">
+                        <img src="Five.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TV-Dinner</h5>
+                            <p class="price">Php 1200.00</p>
+                            <p class="card-text">Hidden inside the vintage TV frame, the microwave heats your meals while you enjoy the retro vibes. Perfect for those who love a blast from the past with their hot pockets and popcorn.</p>
+                            <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Clothes">
+                <div class="text-center for-rowing">
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="440922407_3665533127019093_8539654354006280682_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Baby Overalls</h5>
+                          <p class="price">Php 500.00</p>
+                          <p class="card-text">Best fit for 1 to 2 years old. Kung college na baby mo, ‘di ‘to kasya sa kanya. No issue, branded pa kaya bilin mo na.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="436451606_1856511071537686_3813525500517433541_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Basketball Player Fit</h5>
+                          <p class="price">Php 2000.00</p>
+                          <p class="card-text">Size medium both bottom and top. Bilin mo na para sa bball player bf mong ginagawa kalang backburner. P’wede mo rin iregalo sa ex mong ginawa kang rebound.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="441083903_1366332814041541_8123970592024497030_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Black Flowy Gown</h5>
+                          <p class="price">Php 2500.00</p>
+                          <p class="card-text">Fits best to medium. Keri na’to pang prom n’yo. Gulatin mo sila, ‘wag ka sumunod sa prom theme n’yo at ito ang iyong isuot.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="436602545_8419849941364922_6061360756253828256_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Coquette Dress</h5>
+                          <p class="price">Php 800.00</p>
+                          <p class="card-text">Best fit for 1 to 2 years old. Bilin mo na’to, ikaw nakaporma tapos anak mo hindi? Aba mali ‘yan. No issue.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-padding">
+                    <div class="card rounded last-card" style="width: 18rem;">
+                        <img src="436495376_1213327640074937_3078223400710406412_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Couple Fit</h5>
+                          <p class="price">Php 2000.00</p>
+                          <p class="card-text">Corny n’yo haha pero sige d’yan kayo masaya eh (inggit si seller).  Maraming sizes kay bilin mo na para mainggit chismosa n’yong kapitbahay.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Seating-Options">
+                <div class="text-center for-rowing">
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="441941578_1667477324003431_4166086138355782443_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">One Seater Sofa</h5>
+                          <p class="price">Php 5000.00</p>
+                          <p class="card-text">Pagod ka na bang maghabol? Upo ka muna’t magpahinga. Malambot ‘to promise, pero syempre mas malambot pa rin puso mong lagi n’yang sinasaktan.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="441037555_443856381702164_8686550182937106327_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Yellow Sofa with Throw Pillows</h5>
+                          <p class="price">Php 8000.00</p>
+                          <p class="card-text">2 seater ‘to, kasya kayo ng kaibigan mo na pagod na rin maghabol sa maling tao. Bilin mo na para makapagpahinga na kayo.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="441046807_465299865901640_1855510588868439356_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Sofa with Footstool and 2 Throw Pillow</h5>
+                          <p class="price">Php 11,000.00</p>
+                          <p class="card-text">Kung ‘di sapat sa inyo ang naka upong pagpapahinga, ito bilin n’yo. For sure makakatulog kayo rito habang nagpapahinga sa sobrang lambot.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="441088119_980503229884911_6412143322162032149_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">3 Seater Comfy Sofa</h5>
+                          <p class="price">Php 10,000.00</p>
+                          <p class="card-text">3 seater pero kasya lahat ng naging katalking stage mo na iniwan ka na lang basta-basta sa ere.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-padding">
+                    <div class="card rounded last-card" style="width: 18rem;">
+                        <img src="438171567_3755995088023136_3868937966248601543_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">4 Seater Dining Table</h5>
+                          <p class="price">Php 13,000.00</p>
+                          <p class="card-text">Bilin mo na’to para makakain ka na, ginugutom ka n’ya yata sa lambing eh. Pakabusog ka. Umiikot ‘yang gitna n’yan, gaya nang pagpapa-ikot n’ya sa’yo.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Tools">
+                <div class="text-center for-rowing">
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="438158248_1289127495137198_2702404636602461658_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">1 Set of Tools + Belt Bag</h5>
+                          <p class="price">Php 800.00</p>
+                          <p class="card-text">All tools included. Bilin mo na para ‘di ka na pabalik-balik sa pagkuha ng tools na kailangan mo.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="441079798_1470027260294520_3504625633830048726_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">1 Set of Tools</h5>
+                          <p class="price">Php 1500.00</p>
+                          <p class="card-text">Maganda rin ‘tong pag regalo sa tatay mo. All tools included.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="441061416_1123937565580933_2579693073322153493_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Construction Tools</h5>
+                          <p class="price">Php 3000.00</p>
+                          <p class="card-text">Bilin mo na, kailangan mo ‘to lalo na ‘yung hard helmet. Lagi ka pa namang nahuhulog sa maling tao, baka tumama ulo mo.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="card rounded" style="width: 18rem;">
+                        <img src="438154385_409873538702620_613089801589333786_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">9-Pieces Gardening Tools</h5>
+                          <p class="price">Php 1500.00</p>
+                          <p class="card-text">Perfect ‘to sa’yo dahil mahilig ka namang magtanim ng sama ng loob. Bilin mo na para mas lumago ‘yan.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-padding">
+                    <div class="card rounded last-card" style="width: 18rem;">
+                        <img src="438158239_1559028784646972_6603137609395395748_n.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">8-Pieces Tools + Tool Box</h5>
+                          <p class="price">Php 2000.00</p>
+                          <p class="card-text">Malapit na Father’s Day, bilin mo na’to perfect pang regalo sa tatay mong laging galit pag mali hawak sa flashlight.</p>
+                          <button class="btn btn-primary rounded-pill add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET" id="checkout-form">
+            <div class="main-container">
+                <div class="cart">
+                    <h1 class="bold" style="color: white;">Cart</h1>
+                    <div class="round-div" id="cart-items">
+                        <span class="bottom-text">Total<hr></span>
+                    </div>
+                </div>                    
+                <div class="form-container">
+                    <div class="for-row">
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label" style="color: white;">Name</label>
+                            <input type="text" name="cust_name" class="form-control form-field" id="exampleInputName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label" style="color: white;">Email</label>
+                            <input type="email" name="cust_email" class="form-control form-field" id="exampleInputEmail" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputAddress" class="form-label" style="color: white;">Delivery Address</label>
+                        <input type="text" name="cust_addr" class="form-control form-field full" id="exampleInputAddress" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Place Order</button>
+                </div>
+            </div>
+            <input type="hidden" name="cust_order" id="cust-order-input">
+        </form>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+
+
+                function addItemToCart(title, price) {
+                    const cartItemHTML = `
+                    <div class="cart-item">
+                    <span class="bold">${title}</span>
+                    <span class="price">Php ${price.toFixed(2)}</span>
+                    <span class="remove" style="color: red; cursor: pointer;">remove</span>
+                    </div>
+                    `;
+                    document.getElementById('cart-items').innerHTML += cartItemHTML;
+                    updateTotalPrice();
+                }
+
+
+                function removeItemFromCart(event) {
+                    if (event.target.classList.contains('remove')) {
+                        const item = event.target.parentElement;
+                        item.remove();
+                        updateTotalPrice();
+                    }
+                }
+
+
+                function updateTotalPrice() {
+                    const cartItems = document.querySelectorAll('.cart-item');
+                    if (cartItems.length > 0) {
+                        let totalPrice = 0;
+                        cartItems.forEach(function (cartItem) {
+                            const priceElement = cartItem.querySelector('.price');
+                            const price = parseFloat(priceElement.textContent.replace('Php ', ''));
+                            totalPrice += price;
+                        });
+                        document.querySelector('.bottom-text').textContent = 'Total: Php ' + totalPrice.toFixed(2); 
+                    } else {
+                        document.querySelector('.bottom-text').textContent = 'Total: Php 0.00'; 
+                    }
+                }
+
+                function getCartItems() {
+                    const cartItems = document.querySelectorAll('.cart-item');
+                    const items = [];
+                    cartItems.forEach(function (cartItem) {
+                        const title = cartItem.querySelector('.bold').textContent;
+                        const price = parseFloat(cartItem.querySelector('.price').textContent.replace('Php ', ''));
+                        items.push({ prod_name: title, prod_price: price });
+                    });
+                    return items;
+                }
+
+
+                function submitFormWithOrderData() {
+                    const custOrder = JSON.stringify(getCartItems());
+                    document.getElementById('cust-order-input').value = custOrder;
+                    document.getElementById('checkout-form').submit();
+                }
+
+
+                document.querySelectorAll('.add-to-cart').forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        const card = button.closest('.card');
+                        const title = card.querySelector('.card-title').textContent;
+                        const price = parseFloat(card.querySelector('.price').textContent.replace('Php ', ''));
+                        addItemToCart(title, price);
+                    });
+                });
+
+
+                document.getElementById('cart-items').addEventListener('click', removeItemFromCart);
+
+
+                updateTotalPrice();
+
+
+                window.addEventListener('beforeunload', function () {
+                    localStorage.setItem('cartItems', document.getElementById('cart-items').innerHTML);
+                });
+
+
+                document.getElementById('checkout-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    if (getCartItems().length === 0) {
+                        alert('Please order at least 1 item.');
+                        return;
+                    }
+                    submitFormWithOrderData();
+                });
+
+            });
+        </script>
+    </body>
+</html>
